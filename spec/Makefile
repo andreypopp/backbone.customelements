@@ -8,7 +8,7 @@ build: bundle.js
 	@$(BIN)/coffee -bcp $< > $@
 
 bundle.js: $(LIB)
-	$(BIN)/browserify index.js > $@
+	$(BIN)/browserify --debug index.js > $@
 
 clean:
 	rm -f bundle.js $(LIB)

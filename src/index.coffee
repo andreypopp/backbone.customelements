@@ -32,3 +32,19 @@ exports.register = (elementName, viewClass, options) ->
 
   document.register elementName,
     prototype: proto
+
+class exports.View extends HTMLElement
+
+  @registerAs: (name) ->
+    document.register(name, prototype: this.prototype)
+
+  readyCallback: ->
+    this.el = this
+    this.initialize?()
+    this.render?()
+
+  insertedCallback: ->
+    this.onEnterDOM?()
+
+  removedCallback: ->
+    this.onLeaveDOM()

@@ -1,9 +1,12 @@
 $ = require 'jqueryify'
-{View} = require 'backbone'
-{register} = require '../lib/index'
+Backbone = require 'backbone'
+{register, View} = require '../lib/index'
 
-class Pane extends View
+class Pane extends Backbone.View
   render: ->
     this.$el.html(this.options.text)
 
 register 'pane', Pane
+
+class Tabs extends View
+  @registerAs 'tabs'
