@@ -4,10 +4,10 @@
   "description": "Custom Elements for Backbone.View",
   "main": "lib/index.js",
   "dependencies": {
-    "backbone": "~1.0.0",
     "underscore": "~1.4.4"
   },
   "devDependencies": {
+    "backbone": "~1.0.0",
     "coffee-script": "~1.6.x",
     "mocha": "",
     "chai": "",
