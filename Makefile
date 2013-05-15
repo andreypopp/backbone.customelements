@@ -4,6 +4,9 @@ LIB = $(SRC:src/%.coffee=lib/%.js)
 
 build: $(LIB)
 
+build-spec:
+	$(MAKE) -Cspec build
+
 lib/%.js: src/%.coffee
 	@mkdir -p $(@D)
 	@$(BIN)/coffee -bcp $< > $@

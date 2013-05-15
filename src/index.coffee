@@ -15,8 +15,7 @@ exports.register = (elementName, viewClass, options) ->
 
   proto.readyCallback = ->
     options = {}
-    for attr in this.attributes
-      options[attr.name] = attr.value
+    options[attr.name] = attr.value for attr in this.attributes
     options.el = this
     this.view = new viewClass(options)
     this.view.render()
@@ -49,7 +48,7 @@ class exports.View extends HTMLElement
     this.onEnterDOM?()
 
   removedCallback: ->
-    this.onLeaveDOM()
+    this.onLeaveDOM?()
 
   attributeChangedCallback: (attrName) ->
     this.trigger("change:#{attrName}", this[attrName])
