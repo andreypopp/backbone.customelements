@@ -1,5 +1,5 @@
 {
-  "name": "backbone.elements",
+  "name": "backbone.customelements",
   "version": "0.1.0",
   "description": "Custom Elements for Backbone.View",
   "main": "lib/index.js",
@@ -19,9 +19,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/andreypopp/backbone.elements.git"
+    "url": "git://github.com/andreypopp/backbone.customelements.git"
   },
-  "homepage": "https://github.com/andreypopp/backbone.elements",
+  "homepage": "https://github.com/andreypopp/backbone.customelements",
   "keywords": [
     "browser",
     "backbone",
