@@ -1,6 +1,6 @@
 {
   "name": "backbone.elements",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Custom Elements for Backbone.View",
   "main": "lib/index.js",
   "dependencies": {
