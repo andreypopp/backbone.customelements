@@ -1,0 +1,37 @@
+{
+  "name": "backbone.elements",
+  "version": "0.0.0",
+  "description": "Custom Elements for Backbone.View",
+  "main": "lib/index.js",
+  "dependencies": {
+    "backbone": "~1.0.0",
+    "underscore": "~1.4.4"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.x",
+    "mocha": "",
+    "chai": "",
+    "jsdom": "",
+    "jquery": "",
+    "semver": "",
+    "jqueryify": "",
+    "browserify": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andreypopp/backbone.elements.git"
+  },
+  "homepage": "https://github.com/andreypopp/backbone.elements",
+  "keywords": [
+    "browser",
+    "backbone",
+    "view",
+    "custom-elements"
+  ],
+  "author": {
+    "name": "Andrey Popp",
+    "email": "8mayday@gmail.com",
+    "url": "http://andreypopp.com"
+  },
+  "license": "MIT"
+}
